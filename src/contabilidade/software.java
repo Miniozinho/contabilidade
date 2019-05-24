@@ -173,21 +173,24 @@ public class software {
 					 
 				} else if(escolha ==4) {
 					//lista
-					System.out.println("que tipo de veiculo voce quer visualizar uma lista?")
+					System.out.println("que tipo de veiculo voce quer visualizar uma lista?");
 					System.out.println("1: Moto");
 					System.out.println("2: Passeio");
 					System.out.println("3: SUV");
 					int x = input.nextInt();
 					if (x==1) {
 						
+					    
 					} else if(x ==2) {
 						
+					    
 					} else if (x == 3) {
-						
+			
+					    }
 					}
 				}
 			}
 	}
 
 	
-}
+
