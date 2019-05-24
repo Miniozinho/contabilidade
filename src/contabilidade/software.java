@@ -4,6 +4,7 @@ import java.util.*;
 public class software {
 	Scanner input=new Scanner(System.in);
 	public static void main(String[] args) {
+		//criacao das listas de objetos
 		ArrayList<moto> motolista = new ArrayList();
 		ArrayList<passeio> passeiolista = new ArrayList();
 		ArrayList<suv> suvlista = new ArrayList();
@@ -12,6 +13,7 @@ public class software {
 		// TODO Auto-generated method stub
 		Scanner input=new Scanner(System.in);
 			while(true) {
+				//while que ira rodar infinitamente realizando as funcoes do programa
 				espaco();
 				System.out.println("1: Adicionar veiculo");
 				System.out.println("2: Remover veiculo");
@@ -110,7 +112,7 @@ public class software {
 						System.out.println("Qual moto voce deseja remover?");
 						int m =input.nextInt();
 						if (m<motolista.size()&&m>=0) {
-							motolista.remove(m);
+							motolista.remove(m); //comando para remover um objeto da lista
 						}
 					}
 					} else if(x ==2) {
@@ -123,7 +125,7 @@ public class software {
 							System.out.println("Qual Passeio voce deseja remover?");
 							int m =input.nextInt();
 							if (m<passeiolista.size()&&m>=0) {
-								passeiolista.remove(m);
+								passeiolista.remove(m); //comando para remover um objeto da lista
 							}
 						}
 					} else if (x==3) {
@@ -136,7 +138,7 @@ public class software {
 							System.out.println("Qual SUV voce deseja remover?");
 							int m =input.nextInt();
 							if (m<suvlista.size()&&m>=0) {
-								suvlista.remove(m);
+								suvlista.remove(m); //comando para remover um objeto da lista
 							}
 						}
 					}
@@ -182,7 +184,7 @@ public class software {
 					int x = input.nextInt();
 					espaco();
 					if (x==1) {
-						//criar array de precos
+						//criar array de precos e converte para inteiro, para uma comparacao mais facil
 						int[] za = new int[motolista.size()];
 						for(int i = 0; i < motolista.size(); i++) {
 					        moto cc = motolista.get(i); //printar todo o array 
@@ -202,6 +204,7 @@ public class software {
 						 for(int i = 0; i<za.length; i++){
 							 System.out.println("Preco do veiculo = "+za[k-1]);
 							 k--;
+							 //printa de forma inversa para ser decrescente
 						 }
 						 
 					} else if(x ==2) {
@@ -226,6 +229,7 @@ public class software {
 						 for(int i = 0; i<za.length; i++){
 							 System.out.println("Preco do veiculo = "+za[k-1]);
 							 k--;
+							 //printa de forma inversa para ser decrescente
 						 }
 					    
 					} else if (x == 3) {
@@ -250,6 +254,7 @@ public class software {
 						 for(int i = 0; i<za.length; i++){
 							 System.out.println("Preco do veiculo = "+za[k-1]);
 							 k--;
+							 //printa de forma inversa para ser decrescente
 						 }
 			
 					    }
@@ -258,12 +263,13 @@ public class software {
 			}
 	
 	//funcao para espacamento no console
+	//essa funcao serve apenas para uma melhor visualizacao do programa no terminal
 	public static void espaco() {
 		for(int x =0;x<10;x++) {
 			System.out.println("");
 		}
 	}
-	}
+}
 
 	
 
