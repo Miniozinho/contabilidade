@@ -12,12 +12,13 @@ public class software {
 		// TODO Auto-generated method stub
 		Scanner input=new Scanner(System.in);
 			while(true) {
+				espaco();
 				System.out.println("1: Adicionar veiculo");
 				System.out.println("2: Remover veiculo");
 				System.out.println("3: valor anual dos impostos");
 				System.out.println("4: Lista de veiculos com seus valores");
 				int escolha = input.nextInt();
-				
+				espaco();
 				if(escolha ==1) {
 					//adicionar veiculo
 					System.out.println("Selecione o veiculo");
@@ -98,6 +99,7 @@ public class software {
 					System.out.println("2: Passeio");
 					System.out.println("3: SUV");
 					int x  = input.nextInt();
+					espaco();
 					if (x == 1){
 						//remover uma moto
 					if(motolista.size() !=0) {
@@ -178,6 +180,7 @@ public class software {
 					System.out.println("2: Passeio");
 					System.out.println("3: SUV");
 					int x = input.nextInt();
+					espaco();
 					if (x==1) {
 						//criar array de precos
 						int[] za = new int[motolista.size()];
@@ -253,6 +256,13 @@ public class software {
 					}
 				}
 			}
+	
+	//funcao para espacamento no console
+	public static void espaco() {
+		for(int x =0;x<10;x++) {
+			System.out.println("");
+		}
+	}
 	}
 
 	
