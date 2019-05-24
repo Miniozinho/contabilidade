@@ -179,12 +179,75 @@ public class software {
 					System.out.println("3: SUV");
 					int x = input.nextInt();
 					if (x==1) {
-						
-					    
+						//criar array de precos
+						int[] za = new int[motolista.size()];
+						for(int i = 0; i < motolista.size(); i++) {
+					        moto cc = motolista.get(i); //printar todo o array 
+					        za[i] = (int) cc.valor;
+					    }
+						int aux=0;
+						 for(int i = 0; i<za.length; i++){
+						        for(int j = 0; j<za.length-1; j++){
+						            if(za[j] > za[j + 1]){
+						                aux = za[j];
+						                za[j] = za[j+1];
+						                za[j+1] = aux;
+						            }
+						        }
+						    }
+						 int k =za.length;
+						 for(int i = 0; i<za.length; i++){
+							 System.out.println("Preco do veiculo = "+za[k-1]);
+							 k--;
+						 }
+						 
 					} else if(x ==2) {
 						
+						//criar array de precos
+						int[] za = new int[passeiolista.size()];
+						for(int i = 0; i < passeiolista.size(); i++) {
+					        passeio cc = passeiolista.get(i); //printar todo o array 
+					        za[i] = (int) cc.valor;
+					    }
+						int aux=0;
+						 for(int i = 0; i<za.length; i++){
+						        for(int j = 0; j<za.length-1; j++){
+						            if(za[j] > za[j + 1]){
+						                aux = za[j];
+						                za[j] = za[j+1];
+						                za[j+1] = aux;
+						            }
+						        }
+						    }
+						 int k =za.length;
+						 for(int i = 0; i<za.length; i++){
+							 System.out.println("Preco do veiculo = "+za[k-1]);
+							 k--;
+						 }
 					    
 					} else if (x == 3) {
+						
+						//criar array de precos
+						int[] za = new int[suvlista.size()];
+						for(int i = 0; i < suvlista.size(); i++) {
+					        suv cc = suvlista.get(i); //printar todo o array 
+					        za[i] = (int) cc.valor;
+					    }
+						int aux=0;
+						 for(int i = 0; i<za.length; i++){
+						        for(int j = 0; j<za.length-1; j++){
+						            if(za[j] > za[j + 1]){
+						                aux = za[j];
+						                za[j] = za[j+1];
+						                za[j+1] = aux;
+						            }
+						        }
+						    }
+						 int k =za.length;
+						 for(int i = 0; i<za.length; i++){
+							 System.out.println("Preco do veiculo = "+za[k-1]);
+							 k--;
+						 }
 			
 					    }
 					}
